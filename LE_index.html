@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+    <link rel="StyleSheet" href="LEdesktop.css"/>
+    <link rel="StyleSheet" href="LEmobile.css" media="(max-width: 768px)"/>
+    <script src="LEscript.js"></script>
+    <title>Locanda Elisa</title>
+  </head>
+
+  <body>
+
+    <!----- HERO SECTION ----->
+    <header class="hero">
+
+      <!--Video sfondo-->
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="VideoSfondo.mp4" type="video/mp4" />
+        Il tuo browser non supporta il video HTML5.
+      </video>
+
+      <!--Navbar-->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#prenotaOra">Prenota Ora</a></li>
+          <li><a href="#appartamenti">Appartamenti</a></li>
+          <li><a href="#doveSiamo">Dove Siamo</a></li>
+          <li><a href="#comeRaggiungerci">Come Raggiungerci</a></li>
+        </ul>
+      </nav>
+        
+      <!--Testo sopra il video-->
+      <div class="hero-content">
+        <p class="subtitle">LOCANDA ELISA</p>
+        <h1>Casa Tua, a un passo da Venezia</h1>
+      </div>
+    </header>
+
+    
+    <!----- SEZIONE PRENOTA ----->
+    <section id="prenotaOra" class="sezione-prenota">
+      <div class="intestazionePrenota">
+        <div class="titolo">
+          <h2>Prenota Ora</h2>
+        </div>
+        <div class="descrizione">
+          <p>Scegli le date, verifica la disponibilità e prenota direttamente con noi al miglior prezzo garantito!</p>
+        </div>
+      </div>
+
+      <!-- Calendario fittizio (placeholder) -->
+      <div class="calendario-placeholder">
+        <p style="font-style: italic; color: #555;">[Qui ci sarà il calendario con disponibilità e prezzi]</p>
+      </div>
+    
+      <!-- Pulsante prenotazione -->
+      <a href="#" class="bottone-prenota">PRENOTA ORA</a>
+    </section>
+        
+    <!----- SEZIONE APPARTAMENTI ----->
+    <section id="appartamenti" class="sezione-appartamenti">
+
+      <!-- Intestazione: descrizione + titolo -->
+      <div class="intestazioneAppartamenti">
+        <div class="descrizione">
+          <p>
+          Ogni appartamento offre un’esperienza unica, immersa nella natura e curata nei minimi dettagli. Scegli lo spazio che fa per te.
+          </p>
+        </div>
+        <div class="titolo">
+          <h2>Gli Appartamenti</h2>
+        </div>
+      </div>
+    
+      <div class="griglia-4">
+        <a href="CameraBlu.html" class="item CBlu">
+          <img src="CameraBlu.png" alt="CameraBlu">
+          <div class="testo">CAMERA BLU</div>
+        </a>
+        <a href="Cameragrigia.html" class="item CGrigia">
+          <img src="CameraGrigia.png" alt="CameraGrigia">
+          <div class="testo">CAMERA GRIGIA</div>
+        </a>
+        <a href="CameraRosa.html" class="item CRosa">
+          <img src="CameraRosa.png" alt="CameraRosa">
+          <div class="testo">CAMERA ROSA</div>
+        </a>
+        <a href="CameraVerde.html" class="item CVerde">
+          <img src="CameraVerde.png" alt="CameraVerde">
+          <div class="testo">CAMERA VERDE</div>
+        </a>
+      </div>
+
+    </section>
+    
+    <!----- Sezione DOVE SIAMO ----->
+    <section id="doveSiamo" class="sezione-doveSiamo">
+    
+      <!-- Intestazione: descrizione + titolo -->
+      <div class="intestazioneDoveSiamo">
+         <div class="titolo">
+          <h2>Dove Siamo</h2>
+        </div>
+        <div class="descrizione">
+          <p>
+            Situato a Spinea, a pochi passi dalla stazione ferroviaria, questo appartamento è la base ideale per esplorare Venezia, Padova, Treviso, Vicenza e Verona. Con collegamenti rapidi e diretti, potrai facilmente raggiungere tutte le principali città venete, godendo al contempo della tranquillità di una località residenziale. Una scelta perfetta per chi cerca comodità e accessibilità.
+          </p>
+        </div>
+      </div>
+      
+      <div class="mappa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.276949718659!2d12.170514876301425!3d45.48941544048036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb5f85a88f20b%3A0xf73936247f9323e3!2sVia%20Giuseppe%20Parini%2C%204A%2C%2030038%20Spinea%20VE!5e0!3m2!1sit!2sit!4v1744909365888!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    
+    <!----- Sezione COME RAGGIUNGERCI ----->
+    <section id="comeRaggiungerci" class="sezione-comeRaggiungerci">
+    
+      <!-- Intestazione: descrizione + titolo -->
+      <div class="intestazioneComeRaggiungerci">
+        <div class="descrizione">
+          <p>
+            Descrizione: autostrada, aeroporto venezia, aeroporto treviso, stazione Venezia Mestre
+          </p>
+        </div>
+        <div class="titolo">
+          <h2>Come Raggiungerci</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>Locanda Elisa</h3>
+          <p>Email: chinellato.airbnb@gmail.com</p>
+          <p>Telefono: +39 335 6137438</p>
+        </div>
+        <div class="footer-links">
+          <a href="#prenotaOra">Prenota Ora</a>
+          <a href="#appartamenti">Appartamenti</a>
+          <a href="#doveSiamo">Dove Siamo</a>
+          <a href="#comeRaggiungerci">Come Raggiungerci</a>
+        </div>
+        <!-- <div class="footer-social">
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div> -->
+        <div class="footer-mappa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d526.276949718659!2d12.170514876301425!3d45.48941544048036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb5f85a88f20b%3A0xf73936247f9323e3!2sVia%20Giuseppe%20Parini%2C%204A%2C%2030038%20Spinea%20VE!5e0!3m2!1sit!2sit!4v1744909365888!5m2!1sit!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 Locanda Elisa. Tutti i diritti riservati.
+      </div>
+    </footer>
+
+
+  </body>
+</html>
