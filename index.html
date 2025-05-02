@@ -6,6 +6,7 @@
     <!--Font-->
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
+    <link href="privacy.html"/>
     <link rel="StyleSheet" href="LEdesktop.css"/>
     <link rel="StyleSheet" href="LEmobile.css" media="(max-width: 768px)"/>
     <script src="LEscript.js"></script>
@@ -162,6 +163,27 @@
       </div>
     </footer>
 
+
+    <!----- BANNER COOKIE ----->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+      palette: {
+        popup: { background: "#000" },
+        button: { background: "#f1d600" }
+      },
+      theme: "classic",
+      content: {
+        message: "Questo sito utilizza i cookie per migliorare la tua esperienza.",
+        dismiss: "Accetta",
+        link: "Leggi di più",
+        href: "/privacy.html"  <!-- ← Cambia questo se hai una pagina privacy -->
+      }
+      });
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
   </body>
 </html>
