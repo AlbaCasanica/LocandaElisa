@@ -1,0 +1,177 @@
+@media (max-width: 768px) {
+    
+    /*----- INIZIO HERO SECTION -----*/
+    .menu-toggle {
+      display: block;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      left: 20px;
+      z-index: 1001;
+    }
+
+    /* Aggiunge il simbolo hamburger */
+    .menu-toggle::before {
+        content: "\2630"; /* Unicode per ≡ */
+        font-size: 2rem;
+        color: white;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+  
+    /* Quando è attivo, mostra la X */
+    .menu-toggle.aperto::before {
+        content: "\2715"; /* Unicode per ✕ */
+        transform: rotate(180deg);
+    }
+
+    .navbar-links {
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      padding: 0;
+      pointer-events: none;
+      transition: height 0.3s ease;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      left: auto;
+      width: 100%;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+      align-items: flex-end;
+      text-align: right;
+    }
+  
+    .navbar-links.attivo {
+        height: auto; /* viene gestita da JS */
+        opacity: 1;
+        padding: 20px;
+        pointer-events: auto;
+    }
+  
+    .navbar-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      display: flex;
+      gap: 15px;
+    }
+  
+    .navbar-links a {
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+  
+    .navbar-links a:hover {
+      text-decoration: underline;
+    }
+
+    /*----- FINE HERO SECTION -----*/
+
+    /*----- INIZIO Sezione PRENOTA -----*/
+    .intestazionePrenota .descrizione {
+        text-align: right;
+    }
+    /*----- FINE Sezione PRENOTA -----*/
+
+    /*----- INIZIO Sezione APPARTAMENTI -----*/
+    .intestazioneAppartamenti {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end; /* allinea il contenuto a destra */
+      }
+    
+      .intestazioneAppartamenti .titolo {
+        order: -1;
+        width: 100%;
+        text-align: right;
+      }
+    
+      .intestazioneAppartamenti .descrizione {
+        width: 100%;
+        text-align: left;
+      }
+    
+      .intestazioneAppartamenti .descrizione p {
+        margin: 0;
+      }
+
+      .griglia-4 {
+        padding: 0 !important;
+      }
+    /*----- FINE Sezione APPARTAMENTI -----*/
+
+    /*----- INIZIO Sezione DOVE SIAMO -----*/
+    .intestazioneDoveSiamo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end; /* allinea il contenuto a destra */
+    }
+
+    .intestazioneDoveSiamo .titolo {
+        width: 100%;
+        text-align: right;
+    }
+    
+    .intestazioneDoveSiamo .descrizione {
+        width: 100%;
+        text-align: right;
+    }
+    
+    .intestazioneDoveSiamo .descrizione p {
+        margin: 0;
+    }
+    /*----- FINE Sezione DOVE SIAMO -----*/
+
+    /*----- INIZIO Sezione COME RAGGIUNGERCI -----*/
+    .intestazioneComeRaggiungerci {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end; /* allinea il contenuto a destra */
+    }
+    
+    .intestazioneComeRaggiungerci .titolo {
+        order: -1;
+        width: 100%;
+        text-align: right;
+    }
+    
+    .intestazioneComeRaggiungerci .descrizione {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .intestazioneAppartamenti .descrizione p {
+        margin: 0;
+    }
+    /*----- FINE Sezione APPARTAMENTI -----*/
+}
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
