@@ -286,17 +286,6 @@ h1 {
   margin: 0;
 }
 
-.mappa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem; /* opzionale per dare un po’ di spazio sopra */
-}
-
-.mappa iframe {
-  width: 100%; /* Adatta la mappa alla larghezza disponibile */
-  height: 50%;
-}
 /* -------- FINE Stile Dove Siamo ------------*/
 
 /* -------- INIZIO Stile Come Raggiungerci ------------*/
