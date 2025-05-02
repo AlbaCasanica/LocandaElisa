@@ -190,18 +190,26 @@
         });
       });
 
+    
       function loadAnalytics() {
-    var gtagScript = document.createElement('script');
-    gtagScript.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=G-CRL4HXYF8Q');
-    gtagScript.setAttribute('async', true);
-    document.head.appendChild(gtagScript);
+      // Carica lo script esterno di Google Analytics
+      var gtagScript = document.createElement('script');
+      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-CRL4HXYF8Q';
+      gtagScript.async = true;
+      document.head.appendChild(gtagScript);
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', 'G-CRL4HXYF8Q');
-  }
+      // Quando lo script è caricato, inizializza gtag
+      gtagScript.onload = function() {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      window.gtag = gtag;
+
+      gtag('js', new Date());
+      gtag('config', 'G-CRL4HXYF8Q');
+      };
+      }
+
+
     </script>
 
   </body>
